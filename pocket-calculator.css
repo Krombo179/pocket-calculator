@@ -37,8 +37,8 @@
   border-radius: 15px;
 }
 
-#boxed {
-  border: thick solid #f9a239;
+#screen {
+  border: thick solid black;
   border-radius: 15px;
   text-align: center;
 }
