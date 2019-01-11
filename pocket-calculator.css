@@ -41,4 +41,6 @@
   border: thick solid black;
   border-radius: 15px;
   text-align: center;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 50px;
 }
