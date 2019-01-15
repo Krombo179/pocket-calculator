@@ -1,4 +1,5 @@
 let numbers=[];
+let decimals=false;
 
 function rid() {
   let p=document.getElementById("screen");
@@ -117,11 +118,12 @@ function add() {
 }
 
 function decimal() {
-  if(numbers.length<9) {
+  if(numbers.length<9 && decimals===false) {
     numbers.push(".")
   }
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+  decimal=true;
 }
 
 function zero() {
