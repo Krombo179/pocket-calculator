@@ -13,6 +13,7 @@ function rid() {
   numbers.pop();
   numbers.pop();
   p.innerHTML="0";
+  decimalClear()
 }
 
 function flop() {
@@ -28,6 +29,7 @@ function percent() {
 function divide() {
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+  decimalClear();
 }
 
 function seven() {
@@ -57,6 +59,7 @@ function nine() {
 function multiply() {
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+  decimalClear();
 }
 
 function four() {
@@ -86,6 +89,7 @@ function six() {
 function minus() {
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+  decimalClear();
 }
 
 function one() {
@@ -115,15 +119,16 @@ function three() {
 function add() {
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+  decimalClear();
 }
 
 function decimal() {
-  if(numbers.length<9 && decimals===false) {
+  if(numbers.length<9 && decimals==false) {
     numbers.push(".")
   }
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
-  decimal=true;
+  decimals=true;
 }
 
 function zero() {
@@ -137,4 +142,8 @@ function zero() {
 function equals() {
   let p=document.getElementById("screen");
   p.innerHTML=`${numbers.join("")}`;
+}
+
+function decimalClear() {
+  decimals==false
 }
