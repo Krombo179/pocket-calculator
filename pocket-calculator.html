@@ -23,31 +23,34 @@
             <td bgcolor="#efe3d5"><button onclick="divide()" class="calculator-buttons">÷</button></td>
           </tr>
           <tr>
-            <td bgcolor="#efe3d5"><button onclick="seven()" class="calculator-buttons">7</button></td>
-            <td bgcolor="#efe3d5"><button onclick="eight()" class="calculator-buttons">8</button></td>
-            <td bgcolor="#efe3d5"><button onclick="nine()" class="calculator-buttons">9</button></td>
+            <td bgcolor="#efe3d5"><button value="7" onclick="n(7)" class="calculator-buttons">7</button></td>
+            <td bgcolor="#efe3d5"><button value="8" onclick="n(8)" class="calculator-buttons">8</button></td>
+            <td bgcolor="#efe3d5"><button value="9" onclick="n(9)" class="calculator-buttons">9</button></td>
             <td bgcolor="#efe3d5"><button onclick="multiply()" class="calculator-buttons">x</button></td>
           </tr>
           <tr>
-            <td bgcolor="#efe3d5"><button onclick="four()" class="calculator-buttons">4</button></td>
-            <td bgcolor="#efe3d5"><button onclick="five()" class="calculator-buttons">5</button></td>
-            <td bgcolor="#efe3d5"><button onclick="six()" class="calculator-buttons">6</button></td>
+            <td bgcolor="#efe3d5"><button value="4" onclick="n(4)" class="calculator-buttons">4</button></td>
+            <td bgcolor="#efe3d5"><button value="5" onclick="n(5)" class="calculator-buttons">5</button></td>
+            <td bgcolor="#efe3d5"><button value="6" onclick="n(6)" class="calculator-buttons">6</button></td>
             <td bgcolor="#efe3d5"><button onclick="minus()" class="calculator-buttons">-</button></td>
           </tr>
           <tr>
-            <td bgcolor="#efe3d5"><button onclick="one()" class="calculator-buttons">1</button></td>
-            <td bgcolor="#efe3d5"><button onclick="two()" class="calculator-buttons">2</button></td>
-            <td bgcolor="#efe3d5"><button onclick="three()" class="calculator-buttons">3</button></td>
+            <td bgcolor="#efe3d5"><button value="1" onclick="n(1)" class="calculator-buttons">1</button></td>
+            <td bgcolor="#efe3d5"><button value="2" onclick="n(2)" class="calculator-buttons">2</button></td>
+            <td bgcolor="#efe3d5"><button value="3" onclick="n(3)" class="calculator-buttons">3</button></td>
             <td bgcolor="#efe3d5"><button onclick="add()" class="calculator-buttons">+</button></td>
           </tr>
           <tr>
             <td bgcolor="#efe3d5"><button onclick="decimal()" class="calculator-buttons">.</button></td>
-            <td bgcolor="#efe3d5"><button onclick="zero()" class="calculator-buttons">0</button></td>
+            <td bgcolor="#efe3d5"><button value="0" onclick="n(0)" class="calculator-buttons">0</button></td>
             <td colspan="2" bgcolor="#efe3d5"><button onclick="equals()" class="calculator-buttons">=</button></td>
           </tr>
         </table>
       </div>
+        <marquee scrollamount="30" direction="down" width="1260" height="225" behavior="alternate" style="border:solid">
+          <marquee scrollamount="30" behavior="alternate">
+            <button onclick="website()" class="calculator-buttons" id="bouncing">"Website"</button>
+          </marquee>
+        </marquee>
     </body>
-  <footer>
-  </footer>
 </html>

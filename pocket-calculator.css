@@ -46,3 +46,8 @@
 }
 
 div {background-image: url("./images/stripes.svg")}
+
+#bouncing {
+  height: 100px;
+  width: 250px;
+}
