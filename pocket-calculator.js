@@ -12,7 +12,7 @@ function n(num) {
     document.getElementById("screen").innerHTML=""
   } if (document.getElementById("screen").innerHTML==answer) {
     document.getElementById("screen").innerHTML=""
-  } if (standby.length > 8) {
+  } if (standby.length>8) {
   } else {
     standby=standby+num
     temporary = document.getElementById("screen").innerHTML+num
@@ -32,7 +32,7 @@ function rid() {
 }
 
 function equals() {
-  if (document.getElementById("screen").innerHTML =="+"||document.getElementById("screen").innerHTML=="-"||document.getElementById("screen").innerHTML=="*"||document.getElementById("screen").innerHTML=="/") {
+  if (document.getElementById("screen").innerHTML=="+"||document.getElementById("screen").innerHTML=="-"||document.getElementById("screen").innerHTML=="*"||document.getElementById("screen").innerHTML=="/") {
   } else {
   works+=standby
   standby=""
@@ -42,7 +42,7 @@ function equals() {
     document.getElementById("screen").innerHTML="Infinity is Invalid"
   } else if (answer>=1000000000) {
     let exponent=answer.toString().length-1;
-    answer=answer/(10 ** (exponent))
+    answer=answer/(10**(exponent))
     document.getElementById('screen').innerHTML=answer.toFixed(7)+'e'+exponent;
     }
   }
